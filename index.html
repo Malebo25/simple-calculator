@@ -7,43 +7,45 @@
     <title>Calculator</title>
   </head>
   <body>
-    <table border="1">
-      <tr>
-        <td colspan="4">
-          <input type="text" id="inputBox" value="0" />
-        </td>
-      </tr>
-      <tr>
-        <td  class="digitBtn"  conclick="digitBtnPressed(7)">7</td>
-        <td class="digitBtn" onclick="digitBtnPressed(8)">8</td>
-        <td class="digitBtn" onclick="digitBtnPressed(9)">9</td>
-        <td   class="opBtn" onclick="operatorBtn('*')">x</td>
-      </tr>
-      <tr>
-        <td class="digitBtn"  onclick="digitBtnPressed(4)">4</td>
-        <td class="digitBtn"  onclick="digitBtnPressed(5)">5</td>
-        <td class="digitBtn"  onclick="digitBtnPressed(6 )">6</td>
-        <td   class="opBtn" onclick="operatorBtn('-')">-</td>
-    </tr>
-    <tr>
-        <td class="digitBtn"  onclick="digitBtnPressed(3)">3</td>
-        <td class="digitBtn"  onclick="digitBtnPressed(2)">2</td>
-        <td  class="digitBtn" onclick="digitBtnPressed(1 )">1</td>
-        <td   class="opBtn" onclick="operatorBtn('+')">+</td>
-    </tr>
-
+    <div class="container">
+      <table border="1">
         <tr>
-            <td class="digitBtn" colspan="2" onclick="digitBtnPressed(0 )" >0</td>
-            <td  class="acBtn" onclick="acBtn()">ac</td>
-            <td   class="opBtn" onclick="operatorBtn('/')" >/</td>
-
+          <td colspan="4">
+            <input type="text" id="inputBox" value="0" />
+          </td>
         </tr>
         <tr>
-            <td   class="opBtn" colspan="4" onclick="equalsBtn()">=</td>
-            
+          <td  class="digitBtn"  conclick="digitBtnPressed(7)">7</td>
+          <td class="digitBtn" onclick="digitBtnPressed(8)">8</td>
+          <td class="digitBtn" onclick="digitBtnPressed(9)">9</td>
+          <td   class="opBtn" onclick="operatorBtn('*')">x</td>
         </tr>
+        <tr>
+          <td class="digitBtn"  onclick="digitBtnPressed(4)">4</td>
+          <td class="digitBtn"  onclick="digitBtnPressed(5)">5</td>
+          <td class="digitBtn"  onclick="digitBtnPressed(6 )">6</td>
+          <td   class="opBtn" onclick="operatorBtn('-')">-</td>
       </tr>
-    </table>
+      <tr>
+          <td class="digitBtn"  onclick="digitBtnPressed(3)">3</td>
+          <td class="digitBtn"  onclick="digitBtnPressed(2)">2</td>
+          <td  class="digitBtn" onclick="digitBtnPressed(1 )">1</td>
+          <td   class="opBtn" onclick="operatorBtn('+')">+</td>
+      </tr>
+
+          <tr>
+              <td class="digitBtn" colspan="2" onclick="digitBtnPressed(0 )" >0</td>
+              <td  class="acBtn" onclick="acBtn()">ac</td>
+              <td   class="opBtn" onclick="operatorBtn('/')" >/</td>
+
+          </tr>
+          <tr>
+              <td   class="opBtn" colspan="4" onclick="equalsBtn()">=</td>
+              
+          </tr>
+        </tr>
+      </table>
+    </div>
 
     <script>
         let newLine = true;

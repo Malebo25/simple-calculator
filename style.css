@@ -29,3 +29,7 @@ td {
 .acBtn {
   background-color: #656165;
 }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
